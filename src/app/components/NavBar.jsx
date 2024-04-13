@@ -6,7 +6,7 @@ import { cyberText } from '../page'
 function NavBar() {
     return (
         <>
-            <nav className={"flex z-10 fixed w-screen justify-center items-center h-20  " + cyberText.className}>
+            <nav className={"flex z-20 fixed w-screen text-black justify-center items-center h-20  "}>
                 <motion.div
                     className="relative h-full flex justify-around items-center gap-10 ">
                     <Link

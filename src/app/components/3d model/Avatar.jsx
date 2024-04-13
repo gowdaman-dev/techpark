@@ -19,9 +19,9 @@ export function AvatarModel(props) {
     actions.Animation.play()
   })
   useFrame((state , delta)=>{
-    group.current.rotation.x += delta * 0.1
-    group.current.rotation.y += delta * 0.1
-    group.current.rotation.z += delta * 0.1
+    group.current.rotation.x += delta * 0.05
+    group.current.rotation.y += delta * 0.05
+    group.current.rotation.z += delta * 0.05
   })
   return (
     <group ref={group} {...props} dispose={null} scale={.5}>
