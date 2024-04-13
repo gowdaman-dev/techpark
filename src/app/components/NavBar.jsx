@@ -2,30 +2,31 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import React from 'react'
+import { cyberText } from '../page'
 function NavBar() {
     return (
         <>
-            <nav className="flex fixed w-screen justify-center items-center h-20 text-red-500">
+            <nav className={"flex z-10 fixed w-screen justify-center items-center h-20  " + cyberText.className}>
                 <motion.div
                     className="relative h-full flex justify-around items-center gap-10 ">
                     <Link
                         href="#"
-                        className="relative flex h-full flex-col items-center justify-center gap-2 font-light hover:text-red-400 text-sm">
+                        className="relative flex h-full flex-col items-center justify-center gap-2 font-light hover:text-pink-400 text-md font-semibold">
                         Home
                     </Link>
                     <Link
                         href="#"
-                        className="relative flex h-full flex-col items-center justify-center gap-2 font-light hover:text-red-400 text-sm">
+                        className="relative flex h-full flex-col items-center justify-center gap-2 font-light hover:text-pink-400 text-md font-semibold">
                         About
                     </Link>
                     <Link
                         href="#"
-                        className="relative flex h-full flex-col items-center justify-center gap-2 font-light hover:text-red-400 text-sm">
+                        className="relative flex h-full flex-col items-center justify-center gap-2 font-light hover:text-pink-400 text-md font-semibold">
                         Services
                     </Link>
                     <Link
                         href="#"
-                        className="relative flex h-full flex-col items-center justify-center gap-2 font-light hover:text-red-400 text-sm">
+                        className="relative flex h-full flex-col items-center justify-center gap-2 font-light hover:text-pink-400 text-md font-semibold">
                         Contact
                     </Link>
                 </motion.div>
