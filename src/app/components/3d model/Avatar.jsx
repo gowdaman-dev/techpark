@@ -24,7 +24,7 @@ export function AvatarModel(props) {
     group.current.rotation.z += delta * 0.05
   })
   return (
-    <group ref={group} {...props} dispose={null} scale={.5}>
+    <group ref={group} {...props} args={[4,4,4]} dispose={null} scale={1.2}>
       <group name="Sketchfab_Scene">
         <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]}>
           <group name="root">

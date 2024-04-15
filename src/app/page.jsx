@@ -11,27 +11,25 @@ export default function Home() {
   const dirLight = useRef(null);
   return (
     <>
-      <div className="flex w-screen h-screen bg-gradient-to-r from-rose-100 to-teal-100 text-gray-900">
-        {/* <div className="w-full relative z-10 h-full flex items-center justify-center px-20 flex flex-col text-left">
-          <h1 className={`${cyberText.className} text-cyber md:text-5xl font-semibold text-5xl  `}>
+      <div className="flex w-screen h-screen bg-gradient-to-r from-rose-100 to-teal-100 text-gray-900 backdrop-blur-lg">
+        <div className="w-full relative z-10 h-full flex items-center justify-center px-20 text-gray-800 flex-col text-left">
+          <h1 className={`${cyberText.className} text-cyber md:text-5xl font-semibold text-6xl`}>TECH SAVVY MUSEUM</h1>
+          <h2 className={`${cyberText.className} text-cyber md:text-5xl font-semibold text-5xl`}>
             Explore the Evolution of Computing: A Hands-On Journey
-          </h1>
+          </h2>
           <h4 className=" font-light text-xl py-2">
             Interact with vintage computers, experience groundbreaking
             inventions, and code your own creations.
           </h4>
-        </div> */}
+        </div>
         <div className="w-full top-0 left-0 absolute z-0 h-full flex items-center justify-center">
           <Canvas className="w-full h-full top-0 left-0 ">
             <Suspense fallback={null}>
               <AvatarModel />
-              <group>
-                <Text color={"white"} textAlign="center" fontSize={.5} position={[0, 0, 2]}>tech savvy museum</Text>
-              </group>
             </Suspense>
             <perspectiveCamera position={[0, 0, 0]} />
             <Environment files={'/hero.exr'} />
-            <OrbitControls />
+            <OrbitControls enableZoom={false} />
             <directionalLight color={"#005F00"} intensity={1} ref={dirLight} />
           </Canvas>
         </div>
