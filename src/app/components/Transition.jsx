@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { usePathname } from 'next/navigation'
 import React from 'react'
+import { AnimatePresence, motion } from "framer-motion";
 gsap.registerPlugin(useGSAP);
 function Transition() {
     const path = usePathname()
@@ -30,7 +31,7 @@ function Transition() {
                     ease: 'anticipate',
                     y: "-100%"
                 }
-            }} className="h-screen w-screen top-0 left-0 bg-purple-50 inset-0 fixed flex items-center justify-center">
+            }} className="h-screen w-screen top-0 left-0 bg-purple-50 inset-0 fixed flex z-10 items-center justify-center">
                 <h1 id='poptitle' className='text-5xl font-bold'>{path !== '/' ? path.replace(/\//g, '') : "Home"}</h1>
             </div>
         </div>

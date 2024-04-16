@@ -6,6 +6,7 @@ import { useGSAP } from "@gsap/react";
 import { usePathname } from 'next/navigation'
 import React from 'react'
 import Transition from '../components/Transition';
+import Image from 'next/image';
 gsap.registerPlugin(useGSAP);
 
 function page() {
@@ -27,7 +28,7 @@ function page() {
     }, { scope: container })
     return (
         <div ref={container} className='px-10 py-3'>
-            {/* <Transition /> */}
+            <Transition />
             <div className="header overflow-hidden">
                 <h1 id='Heading' className='text-8xl font-black'>Museum</h1>
             </div>
@@ -36,11 +37,27 @@ function page() {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
             </div>
-            <motion.div initial={{ opacity: 0, transition: { duration: 1 } }} animate={{ opacity: 1, transition: { delay: 2, ease: 'linear' } }} className="searcher flex w-full bg-gray-100 px-4 py-6 my-2 rounded">
-                <input spellCheck="false" autoComplete type="text" placeholder='Search...' className='w-full p-2 border outline-none border-gray-200 rounded-lg' />
-            </motion.div>
-            <div className="w-[400px] h-[400px] group border rounded-md flex items-center justify-center cursor-pointer">
-                <h4 className='text-5xl font-semibold skew-y-12  group-hover:-skew-y-12 transition-all duration-500 ease-in-out '>mouse</h4>
+            <div className="w-fit grid place-items-start gap-0 gird-cols-4 mt-4">
+                <div className="grid col-start-1 grid-cols-1 w-[400px] h-[600px] gap-0">
+                    <div className="w-[400px] h-[600px] group border rounded-md flex items-center justify-center cursor-pointer group">
+                        <Image src={'/imgs/mouse.jpg'} alt='mouse' width={400} height={600} className='w-full h-full opacity-50 group-hover:opacity-100 transition-all ease-linear duration-300' />
+                    </div>
+                </div>
+                <div className="grid col-start-2 grid-cols-1 w-fit gap-0">
+                    <div className="w-[400px] h-[400px] group border rounded-md flex items-center justify-center cursor-pointer group">
+                        <Image src={'/imgs/keyboard.jpg'} alt='mouse' width={400} height={400} className='w-full h-full opacity-50 group-hover:opacity-100 transition-all ease-linear duration-300' />
+                    </div>
+                </div>
+                <div className="grid col-start-3 grid-cols-1 w-fit gap-0">
+                    <div className="w-[400px] h-[600px] group border rounded-md flex items-center justify-center cursor-pointer group">
+                        <Image src={'/imgs/monitor.jpg'} alt='mouse' width={400} height={600} className='w-full h-full opacity-50 group-hover:opacity-100 transition-all ease-linear duration-300' />
+                    </div>
+                </div>
+                <div className="grid col-start-4 grid-cols-1 w-fit gap-0">
+                    <div className="w-[400px] h-[400px] group border rounded-md flex items-center justify-center cursor-pointer group">
+                        <Image src={'/imgs/monitor.jpg'} alt='mouse' width={400} height={400} className='w-full h-full opacity-50 group-hover:opacity-100 transition-all ease-linear duration-300' />
+                    </div>
+                </div>
             </div>
         </div>
     )

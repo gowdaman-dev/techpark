@@ -2,7 +2,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/Navbar";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 export default function RootLayout({ children }) {
