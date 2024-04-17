@@ -4,9 +4,9 @@ import React from 'react'
 
 const NavBar = () => {
     return (
-        <div className='w-screen h-fit p-4 px-10 flex items-center justify-between'>
+        <div className='max-w-screen h-fit p-4 px-10 flex items-center justify-between'>
             <h1 className='text-xl font-black text-violet-500'>
-                <Image src={'/logo.svg'} alt='logo' width={150} height={50} className='w-[400px]' />
+                Tech Savvy  
             </h1>
             <nav className='flex gap-8 font-semibold text-sm'>
                 <Link className='hover:text-purple-400 transition-colors ease-in-out duration-300' href={'/'}>
