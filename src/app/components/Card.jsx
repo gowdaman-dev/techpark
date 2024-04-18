@@ -16,24 +16,26 @@ function Card({ model }) {
                         return <>
                             <h2 className='text-4xl font-bold py-2'>{data.title}</h2>
                             {
-                                data.content
+                                data.content.map((content) => {
+                                    return <p>{content}</p>
+                                })
                             }
                         </>
                     })
                 }
             </div>
             <div className='w-1/2 h-full'>
-                <Canvas className='bg-blue-200 h-full w-full rounded-lg'>
+                <Canvas className=' h-full w-full rounded-lg'>
                     <ambientLight intensity={4} shadow={true} />
-                    <directionalLight intensity={.5} shadow={true} position={[10, 10, 10]} />
-                    <OrbitControls enableZoom={false} />
+                    <directionalLight intensity={.5} shadow={true} position={[10, 10, 5]} />
+                    <OrbitControls autoRotate />
                     {
                         ModelData.filter((data) => data.key === model).map((data) => {
                             return data.model
                         })
                     }
                     <meshStandardMaterial />
-                    <PerspectiveCamera makeDefault position={[10, 10, 10]} scale={.5} />
+                    <PerspectiveCamera makeDefault position={[10, 10, 10]} scale={.2} />
                 </Canvas>
             </div>
         </div>
