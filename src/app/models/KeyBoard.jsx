@@ -13,7 +13,7 @@ import { useGLTF } from '@react-three/drei'
 export function KeyBoardModel(props) {
   const { nodes, materials } = useGLTF('/models/keyboard.glb')
   return (
-    <group {...props} dispose={null} scale={.2}>
+    <group {...props} dispose={null} scale={.08}>
       <group position={[0, 1.619, -0.017]} rotation={[0.123, 0, 0]}>
         <mesh geometry={nodes.keyboard_Keyboard_0.geometry} material={materials.Keyboard} />
         <mesh geometry={nodes.keyboard_Key_0.geometry} material={materials.material} />

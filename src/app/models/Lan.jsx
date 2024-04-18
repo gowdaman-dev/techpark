@@ -13,7 +13,7 @@ import { useGLTF } from '@react-three/drei'
 export function LanModel(props) {
   const { nodes, materials } = useGLTF('/models/lan.glb')
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} scale={.1}>
       <mesh geometry={nodes.Object_6.geometry} material={materials['01_-_Default']} rotation={[-Math.PI / 2, 0, 0]} />
       <mesh geometry={nodes.Object_9.geometry} material={materials['01_-_Default']} rotation={[-Math.PI / 2, 0, 0]} />
       <mesh geometry={nodes.Object_12.geometry} material={materials['01_-_Default']} rotation={[-Math.PI / 2, 0, 0]} />

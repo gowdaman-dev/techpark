@@ -13,7 +13,7 @@ import { useGLTF } from '@react-three/drei'
 export function PrinterModel(props) {
   const { nodes, materials } = useGLTF('/models/printer.glb')
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} scale={.1}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <mesh geometry={nodes.Object_2.geometry} material={materials.semitrans} />
         <mesh geometry={nodes.Object_3.geometry} material={materials['black-textured']} />

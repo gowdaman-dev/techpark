@@ -3,6 +3,7 @@ import { CameraModel } from "../models/Camera";
 import { CdDriveModel } from "../models/CdDrive";
 import { CpuModel } from "../models/Cpu";
 import { DvdModel } from "../models/Dvd";
+import { HubModel } from "../models/Hub";
 import { KeyBoardModel } from "../models/KeyBoard";
 import { LanModel } from "../models/Lan";
 import { ModemModel } from "../models/Moden";
@@ -85,7 +86,7 @@ export const ModelData = [
     {
         key: "hub",
         title: "Hub",
-        model: '',
+        model: <HubModel />,
         content: [
             "A hub is a common connection point, also known as a network hub, which is used for connection of devices in a network. It works as a central connection for all the devices that are connected through a hub. The hub has numerous ports. If a packet reaches at one port, it is able to see by all the segments of the network due to a packet is copied to the other ports. A network hub has no routing tables or intelligence (unlike a network switch or router), which is used to send information and broadcast all network data across each and every connection,Although most of the hubs can recognize network troubles or errors like collisions, broadcasting all information to the several ports can be a security risk and cause bottlenecks. The network hubs were popular in the past time as they were cheaper as compared to a switch or router. Nowadays, switches are much cheaper than a hub and provide a better solution for any network. Furthermore, a hub is no IP address, as it is a dumb device."
         ]

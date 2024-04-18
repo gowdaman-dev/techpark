@@ -229,7 +229,7 @@ function page() {
                         Printer
                     </h1>
                 </div>
-                <div id='products3' onClick={() => { setShow('biometric') }} className=" relative w-full overflow-hidden  h-[600px] group border rounded-md flex items-center justify-center cursor-pointer group">
+                <div id='products3' onClick={() => { setShow('biomatric') }} className=" relative w-full overflow-hidden  h-[600px] group border rounded-md flex items-center justify-center cursor-pointer group">
                     <Image src={'/imgs/biometric.jpg'} alt='Biometric' width={420} height={600} className='group-hover:scale-105 h-full w-full opacity-70 group-hover:opacity-100 transition-all ease-linear duration-300' />
                     <h1 className='absolute text-4xl text-white font-light md:opacity-0 md:translate-y-6 group-hover:opacity-100 group-hover:translate-y-0 transition-all ease-linear duration-300'>
                         Biometric

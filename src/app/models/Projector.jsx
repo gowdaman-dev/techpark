@@ -13,7 +13,7 @@ import { useGLTF } from '@react-three/drei'
 export function ProjectorModel(props) {
   const { nodes, materials } = useGLTF('/models/projector.glb')
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} scale={.1}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <mesh geometry={nodes.Object_2.geometry} material={materials.foot} />
         <mesh geometry={nodes.Object_3.geometry} material={materials.projector} />

@@ -13,7 +13,7 @@ import { useGLTF } from '@react-three/drei'
 export function CameraModel(props) {
   const { nodes, materials } = useGLTF('/models/camera.glb')
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} scale={2}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <mesh geometry={nodes.defaultMaterial.geometry} material={materials.DefaultMaterial} rotation={[Math.PI / 2, 0, 0]} />
       </group>

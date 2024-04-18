@@ -10,14 +10,14 @@ function Card({ model }) {
     console.log(model);
     return (
         <div className='w-full h-full flex'>
-            <div className='w-1/2'>
+            <div className='w-1/2 text-white'>
                 {
                     ModelData.filter((data) => data.key === model).map((data) => {
                         return <>
-                            <h2 className='text-4xl font-bold py-2'>{data.title}</h2>
+                            <h2 className='text-6xl  font-bold py-2 text-violet-400'>{data.title}</h2>
                             {
                                 data.content.map((content) => {
-                                    return <p>{content}</p>
+                                    return <p className='text-2xl opacity-90 font-light text-justify'>{content}</p>
                                 })
                             }
                         </>
@@ -35,7 +35,7 @@ function Card({ model }) {
                         })
                     }
                     <meshStandardMaterial />
-                    <PerspectiveCamera makeDefault position={[10, 10, 10]} scale={.2} />
+                    <PerspectiveCamera makeDefault position={[5, 0, 5]} scale={.2} />
                 </Canvas>
             </div>
         </div>

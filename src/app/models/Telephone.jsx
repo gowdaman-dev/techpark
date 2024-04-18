@@ -13,7 +13,7 @@ import { useGLTF } from '@react-three/drei'
 export function TelephoneModel(props) {
   const { nodes, materials } = useGLTF('/models/telephone.glb')
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} scale={18}>
       <group scale={0.01}>
         <mesh geometry={nodes.tel_fijo_tel_fijo_0.geometry} material={materials.tel_fijo} rotation={[-1.489, 0, 0]} scale={[6.504, 9.088, 6.504]} />
       </group>

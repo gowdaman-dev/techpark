@@ -13,7 +13,7 @@ import { useGLTF } from '@react-three/drei'
 export function DvdModel(props) {
   const { nodes, materials } = useGLTF('/models/dvd.glb')
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} scale={.04}>
       <mesh geometry={nodes.Object_4.geometry} material={materials['01___Default']} />
       <mesh geometry={nodes.Object_5.geometry} material={materials['02___Default']} />
       <mesh geometry={nodes.Object_6.geometry} material={materials['03___Default']} />

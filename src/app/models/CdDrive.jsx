@@ -15,7 +15,7 @@ export function CdDriveModel(props) {
   const { nodes, materials, animations } = useGLTF('/models/cddrive.glb')
   const { actions } = useAnimations(animations, group)
   return (
-    <group ref={group} {...props} dispose={null}>
+    <group ref={group} {...props} dispose={null} scale={50}>
       <group name="Sketchfab_Scene">
         <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]}>
           <group name="66ef3c7f952b41c189c82dcf41a9917afbx" rotation={[Math.PI / 2, 0, 0]} scale={0.01}>

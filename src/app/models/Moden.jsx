@@ -13,7 +13,7 @@ import { useGLTF } from '@react-three/drei'
 export function ModemModel(props) {
   const { nodes, materials } = useGLTF('/models/modem.glb')
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} scale={12}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={0.029}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <group position={[-0.06, 4.142, -0.48]}>

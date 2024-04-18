@@ -13,7 +13,7 @@ import { useGLTF } from '@react-three/drei'
 export function MouseModel(props) {
   const { nodes, materials } = useGLTF('/models/mouse.glb')
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} scale={0.4}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <mesh geometry={nodes.R_Mouse_00_R_Mouse_0.geometry} material={materials.R_Mouse} position={[0, 3.403, 0.868]} />
       </group>
