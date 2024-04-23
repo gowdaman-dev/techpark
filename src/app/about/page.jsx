@@ -5,7 +5,7 @@ import { useGSAP } from "@gsap/react";
 import { motion } from 'framer-motion';
 import Transition from '../components/Transition';
 function page() {
-    const container = useRef();
+    const Container = useRef();
     useGSAP(() => {
         const timeline = gsap.timeline({});
         timeline.from("#Heading", {
@@ -20,9 +20,9 @@ function page() {
             delay: -1.2,
             duration: 1
         })
-    }, { scope: container })
+    }, { scope: Container })
     return (
-        <div ref={container} className=' py-4 flex flex-col overflow-hidden'>
+        <div ref={Container} className=' py-4 flex flex-col overflow-hidden'>
             <Transition />
             <div className="px-10 py-8 overflow-hidden">
                 <div className="w-full h-fit overflow-hidden">

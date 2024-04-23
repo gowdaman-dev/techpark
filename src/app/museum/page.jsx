@@ -11,7 +11,7 @@ import Card from '../components/Card';
 gsap.registerPlugin(useGSAP);
 
 function page() {
-    const container = useRef();
+    const Container = useRef();
     useGSAP(() => {
         const timeline = gsap.timeline({});
         timeline.from("#Heading", {
@@ -53,7 +53,7 @@ function page() {
             duration: .3,
             stagger: 0.2
         })
-    }, { scope: container })
+    }, { scope: Container })
     const [show, setShow] = useState('');
     const anime = (variants) => {
         return {
@@ -98,7 +98,7 @@ function page() {
         }
     }
     return (
-        <div ref={container} className='px-10 py-3 max-w-screen h-fit'>
+        <div ref={Container} className='px-10 py-3 max-w-screen h-fit'>
             <Transition />
             <div className="header overflow-hidden">
                 <h1 id='Heading' className='xl:text-8xl md:text-6xl text-4xl font-black'>Museum</h1>
