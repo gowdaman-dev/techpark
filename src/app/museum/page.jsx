@@ -7,7 +7,7 @@ import React from 'react'
 import Transition from '../components/Transition';
 import Image from 'next/image';
 import { AiOutlineClose } from 'react-icons/ai'
-import Card from '../components/card';
+import Card from '../components/Card';
 gsap.registerPlugin(useGSAP);
 
 function page() {
