@@ -12,7 +12,7 @@ function Card({ model }) {
                 {
                     ModelData.filter((data) => data.key === model).map((data) => {
                         return <>
-                            <h2 className='xl:text-6xl md:text-4xl text-3xl  font-bold py-2 text-violet-400'>{data.title}</h2>
+                            <h2 key={data.key} className='xl:text-6xl md:text-4xl text-3xl  font-bold py-2 text-violet-400'>{data.title}</h2>
                             {
                                 data.content.map((content) => {
                                     return <p className='md:text-2xl text-md opacity-90 font-light text-justify'>{content}</p>
