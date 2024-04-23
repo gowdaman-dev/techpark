@@ -14,6 +14,7 @@ import { OldMobileModel } from "../models/OldMobile";
 import { PrinterModel } from "../models/Printer";
 import { ProjectorModel } from "../models/Projector";
 import { ScannerModel } from "../models/Scanner";
+import { Scanner2Model } from "../models/Scanner2";
 import { TelephoneModel } from "../models/Telephone";
 
 export const ModelData = [
@@ -53,7 +54,7 @@ export const ModelData = [
     {
         key: "scanner",
         title: "Scanner",
-        model: <ScannerModel />,
+        model: <Scanner2Model />,
         content: [
             "A scanner is an electrical device that reads and converts documents such as photos and pages of text into a digital signal. This changes the documents in a form that can be viewed and or modified on a computer system by using software applications. There are numerous kinds of scanners available in the market that have different resolutions,Most scanners have a flat scanning surface as they are flatbed devices, which are mainly used for scanning magazines, photographs, and numerous documents. Furthermore, because most flatbed scanners have a cover that lifts up, they can scan books and other heavy things. A sheet-fed scanner is another type of scanner that is only able to accept paper documents. Although sheet-fed scanners have no capability of scanning books, some of their models include a feature of an automatic document feeder (ADF) that allows various pages to be scanned in sequence."
         ]
@@ -102,7 +103,7 @@ export const ModelData = [
     {
         key: "barcodescanner",
         title: "Bar Code Scanner",
-        model: "",
+        model: <ScannerModel />,
         content: [
             "A barcode reader or barcode scanner is an optical scanner that can read printed barcodes, decode the data contained in the barcode on a computer. Like a flatbed scanner, it consists of a light source, a lens, and a light sensor for translating optical impulses into electrical signals."
         ]

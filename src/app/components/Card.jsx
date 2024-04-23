@@ -4,28 +4,26 @@ import { OrbitControls } from '@react-three/drei'
 import { PerspectiveCamera } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import { ModelData } from './modeldata';
-import { MouseModel } from '../models/Mouse';
-
 function Card({ model }) {
     console.log(model);
     return (
-        <div className='w-full h-full flex'>
-            <div className='w-1/2 text-white'>
+        <div className='w-full h-full flex md:flex-row flex-col-reverse'>
+            <div className='w-full text-white'>
                 {
                     ModelData.filter((data) => data.key === model).map((data) => {
                         return <>
-                            <h2 className='text-6xl  font-bold py-2 text-violet-400'>{data.title}</h2>
+                            <h2 className='xl:text-6xl md:text-4xl text-3xl  font-bold py-2 text-violet-400'>{data.title}</h2>
                             {
                                 data.content.map((content) => {
-                                    return <p className='text-2xl opacity-90 font-light text-justify'>{content}</p>
+                                    return <p className='md:text-2xl text-md opacity-90 font-light text-justify'>{content}</p>
                                 })
                             }
                         </>
                     })
                 }
             </div>
-            <div className='w-1/2 h-full'>
-                <Canvas className=' h-full w-full rounded-lg'>
+            <div className='w-full h-full'>
+                <Canvas className=' h-full min-w-[400px] rounded-lg'>
                     <ambientLight intensity={4} shadow={true} />
                     <directionalLight intensity={.5} shadow={true} position={[10, 10, 5]} />
                     <OrbitControls autoRotate />

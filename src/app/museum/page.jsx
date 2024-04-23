@@ -101,10 +101,10 @@ function page() {
         <div ref={container} className='px-10 py-3 max-w-screen h-fit'>
             <Transition />
             <div className="header overflow-hidden">
-                <h1 id='Heading' className='text-8xl font-black'>Museum</h1>
+                <h1 id='Heading' className='xl:text-8xl md:text-6xl text-4xl font-black'>Museum</h1>
             </div>
-            <div className="w-1/2 overflow-hidden">
-                <p id='subheading' className='text-3xl -translate-y-[100%]'>
+            <div className="md:w-1/2 w-full overflow-hidden">
+                <p id='subheading' className='md:text-3xl text-2xl -translate-y-[100%]'>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
             </div>

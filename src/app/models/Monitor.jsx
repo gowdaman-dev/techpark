@@ -9,7 +9,7 @@ import { useGLTF } from '@react-three/drei'
 export function MonitorModel(props) {
   const { nodes, materials } = useGLTF('/models/monitor.glb')
   return (
-    <group {...props} dispose={null} position={[0, -10, 0]} scale={.05}>
+    <group {...props} dispose={null} position={[0, -2, 0]} scale={.05}>
       <group position={[0, 14.702, 52.536]} rotation={[-Math.PI / 2, 0, 0]} scale={0.08}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <group rotation={[-Math.PI / 2, 0, Math.PI / 2]} scale={2.926}>
