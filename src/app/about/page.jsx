@@ -1,11 +1,11 @@
 "use client"
-import React, { useRef } from 'react'
+import { useRef as UseRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { motion } from 'framer-motion';
 import Transition from '../components/Transition';
 function page() {
-    const Container = useRef();
+    const Container = UseRef();
     useGSAP(() => {
         const timeline = gsap.timeline({});
         timeline.from("#Heading", {

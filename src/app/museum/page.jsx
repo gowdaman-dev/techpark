@@ -1,6 +1,6 @@
 'use client'
 import { AnimatePresence, animate, motion } from 'framer-motion'
-import { useRef, useState } from "react";
+import { useRef as UseRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import React from 'react'
@@ -11,7 +11,7 @@ import Card from '../components/Card';
 gsap.registerPlugin(useGSAP);
 
 function page() {
-    const Container = useRef();
+    const Container = UseRef();
     useGSAP(() => {
         const timeline = gsap.timeline({});
         timeline.from("#Heading", {
