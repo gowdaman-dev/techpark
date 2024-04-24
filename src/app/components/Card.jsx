@@ -23,7 +23,7 @@ function Card({ model }) {
                 }
             </div>
             <div className='w-full h-full'>
-                <Canvas className=' h-full min-w-[400px] rounded-lg'>
+                <Canvas className=' md:h-full h-[400px] min-w-[400px] rounded-lg'>
                     <ambientLight intensity={4} shadow={true} />
                     <directionalLight intensity={.5} shadow={true} position={[10, 10, 5]} />
                     <OrbitControls autoRotate />

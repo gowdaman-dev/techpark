@@ -30,6 +30,7 @@ function page() {
                 </div>
                 <div className="w-full h-fit overflow-hidden">
                     <h1 id='subheading' className='text-4xl py-4 font-semibold'>Tech Savvy Musuem</h1>
+                    <h2 id='subheading' className='text-2xl pb-4 font-semibold'>One can build a idea but a team can make it to reality!</h2>
                 </div>
                 <motion.p className='text-gray-800'>We the students of <strong>ACHARIYA COLLEGE OF ENGINEERING TECHNOLOGY</strong> Proudly welcome you all to our Technical Museum.Here,you can get a Vast knowledge about the computer Hardware and Software.</motion.p>
                 <motion.p>Through our website you can easily navigate in and around the Museum in a Virtualized Manner.From our website you could get in-depth information about the components which have been displayed in our Museum and through our website you can view the components in 3D manner from which you can view the objects through all the sides </motion.p>
@@ -66,17 +67,18 @@ function page() {
                     <div className=' p-6 md:p-8 text-center mt-6'>
                         <h2 className='text-4xl font-semibold py-4'>List of Faculty</h2>
                         <div className='max-w-4xl mx-auto'>
-                            <p className='text-gray-800 leading-relaxed'>- Rajalakshmi AP/CSE</p>
-                            <p className='text-gray-800 leading-relaxed'>- Jeyalakshmy AP/CSE</p>
-                            <p className='text-gray-800 leading-relaxed'>- Madura Dhivya AP/CSE</p>
-                            <p className='text-gray-800 leading-relaxed'>- Kalaichelvi AP/CSE</p>
-                            <p className='text-gray-800 leading-relaxed'>- Vijayalakshmi AP/CSE</p>
-                            <p className='text-gray-800 leading-relaxed'>- Ganesan AP/CSE</p>
-                            <p className='text-gray-800 leading-relaxed'>- Dhivya AP/CSE</p>
+                            <p className='text-gray-800 leading-relaxed'>- Mrs.Rajalakshmi AP/CSE</p>
+                            <p className='text-gray-800 leading-relaxed'>- Mrs.Jeyalakshmy AP/CSE</p>
+                            <p className='text-gray-800 leading-relaxed'>- Mrs.Madura Dhivya AP/CSE</p>
+                            <p className='text-gray-800 leading-relaxed'>- Mrs.Kalaichelvi AP/CSE</p>
+                            <p className='text-gray-800 leading-relaxed'>- Mrs.Vijayalakshmi AP/CSE</p>
+                            <p className='text-gray-800 leading-relaxed'>- Mr.Ganesan AP/CSE</p>
+                            <p className='text-gray-800 leading-relaxed'>- Mrs.Bhuvaneshwari AP/CSE</p>
+                            <p className='text-gray-800 leading-relaxed'>- Mrs.Dhivya AP/CSE</p>
 
                             <h2 className='text-4xl font-semibold py-4 mt-4'>Non-Faculty Members</h2>
-                            <p className='text-gray-800 leading-relaxed'>- Anbarasu Lab Incharge</p>
-                            <p className='text-gray-800 leading-relaxed'>- Abbubbacker Sithick Lab Incharge</p>
+                            <p className='text-gray-800 leading-relaxed'>- Mr.Anbarasu Lab Incharge</p>
+                            <p className='text-gray-800 leading-relaxed'>- Mr.Abbubbacker Sithick Lab Incharge</p>
                         </div>
                     </div>
 
@@ -98,24 +100,24 @@ function page() {
                         marvels of technology in a unique and captivating manner.
                     </p>
                     <div className='mt-4'>
-                        <h3 className='text-2xl font-semibold py-4 text-center '>Our Team Mates</h3>
+                        <h3 className='text-2xl font-semibold py-4 text-center '>Our Team</h3>
                         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-sm mx-auto'>
                             {[
+                                { name: 'Abdul Bahshith.B' },
+                                { name: 'Akshaya.V.M' },
                                 { name: 'Antony Dass.F' },
                                 { name: 'Ashwathi.M' },
-                                { name: 'Jude Britto.A' },
-                                { name: 'Sanjai Kumar.A' },
-                                { name: 'Raveena.V' },
                                 { name: 'Gopalakrishnan.V' },
-                                { name: 'Akshaya.V.M' },
                                 { name: 'Harish.S' },
+                                { name: 'Jude Britto.A' },
+                                { name: 'Rasika.P' },
+                                { name: 'Raveena.V' },
                                 { name: 'Reshma.M' },
-                                { name: 'Resika.P' },
-                                { name: 'Abdul Bahshith.B' },
+                                { name: 'Sanjai Kumar.A' },
                                 { name: 'Yuvasri.S' },
                             ].map(({ name }) => (
                                 <div key={name} className='border border-gray-200 rounded-lg p-4 bg-white shadow-sm'>
-                                    <p className='text-gray-800 leading-relaxed'>{name}</p>
+                                    <p className='text-gray-800 leading-relaxed text-center'>{name}</p>
                                 </div>
                             ))}
                         </div>
@@ -132,7 +134,7 @@ function page() {
                         Tech Savvy Team is a well knowledgeable and eager for success through various aspects of time management, resource management ,financial management and team coordination.Through ,this work we attained various inputs and produced an proactive output.Tech Savvy Museum is not only consist of group of few ,it is an proud property of every souls of CSE department members.We as a team expect the upcoming generations to enhance the museum to the next level.</p>
                     <p className='text-gray-800 leading-relaxed text-center py-4'>
                         <span className='block font-semibold text-2xl '>Determination comes upon intimation to determine your destination.</span>
-                        <span className='block font-medium text-sm text-gray-600'>- Mahatma Gandhi</span>
+                        <span className='block font-medium text-sm text-gray-600'>- Tech Savvy Museum</span>
                     </p>
                     <p className='text-gray-800 leading-relaxed'>
                         Through various creative ideas given by our students the components have been displayed in the manner through which a Non-Technical background person can also acquire the knowledge.
@@ -143,10 +145,10 @@ function page() {
                 <h2 className='text-4xl font-semibold py-4 text-center text-white'>Connect With Us</h2>
                 <div className='max-w-4xl mx-auto text-white'>
                     <p className='text-white leading-relaxed text-center'>
-                        Tech Savvy Team would love to hear your feedback about your experience and queries. We are always open to hear your concerns and suggestions which will help us to enhance and grow the Tech Savvy Museum. Please feel free to contact us at antonydass39@gmail.com.
+                        Tech Savvy Team would love to hear your feedback about your experience and queries. We are always open to hear your concerns and suggestions which will help us to enhance and grow the Tech Savvy Museum. Please feel free to contact us at techsavvy.acet@gmail.com.
                     </p>
                     <div className='mt-4 flex justify-center'>
-                        <a href='mailto:antonydass39@gmail.com' className='inline-flex items-center bg-white hover:bg-gray-800 text-gray-800 hover:text-white border border-gray-800 hover:border-gray-800 text-xs font-semibold py-2 px-4 rounded'>
+                        <a href='mailto:techsavvy.acet@gmail.com' className='inline-flex items-center bg-white hover:bg-gray-800 text-gray-800 hover:text-white border border-gray-800 hover:border-gray-800 text-xs font-semibold py-2 px-4 rounded'>
                             <span className='mr-2'>Email us</span> <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
                         </a>
                     </div>

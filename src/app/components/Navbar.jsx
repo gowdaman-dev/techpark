@@ -20,10 +20,10 @@ const NavBar = () => {
                     Museum
                 </Link>
                 <Link className='hover:text-purple-400 transition-colors ease-in-out duration-300' href={'/developer'}>
-                    developers
+                    Developers
                 </Link>
                 <Link className='hover:text-purple-400 transition-colors ease-in-out duration-300' href={'/about'}>
-                    about
+                    About
                 </Link>
             </nav>
             <div className="md:hidden">

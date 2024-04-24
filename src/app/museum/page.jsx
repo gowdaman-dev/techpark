@@ -105,7 +105,7 @@ function page() {
             </div>
             <div className="md:w-1/2 w-full overflow-hidden">
                 <p id='subheading' className='md:text-3xl text-2xl -translate-y-[100%]'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Let the Hardware be the strongest knowledge you get .
                 </p>
             </div>
             <AnimatePresence mode='wait'>

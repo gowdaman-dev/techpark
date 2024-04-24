@@ -32,7 +32,7 @@ function Transition() {
                     y: "-100%"
                 }
             }} className="h-screen w-screen top-0 left-0 bg-purple-50 inset-0 fixed flex z-10 items-center justify-center">
-                <h1 id='poptitle' className='text-5xl font-bold'>{path !== '/' ? path.replace(/\//g, '') : "Home"}</h1>
+                <h1 id='poptitle' className='capitalize text-5xl font-bold'>{path !== '/' ? path.replace(/\//g, '') : "Home"}</h1>
             </div>
         </div>
     )
