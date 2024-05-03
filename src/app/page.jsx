@@ -22,7 +22,10 @@ export default function Home() {
           }}>
 
           <p className='max-w-xl text-lg leading-relaxed md:text-xl sm:text-base text-center'>
+            <q>
+
             Explore the world of tech and art, learn about the creative minds behind them and witness the magic of technology unfold before your eyes.
+            </q>
           </p>
           <motion.div
             className='mt-8 flex items-center justify-center animate-fade-in'
@@ -32,7 +35,7 @@ export default function Home() {
             }}>
             <motion.a
               href='/museum'
-              className='bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-white font-bold text-center cursor-pointer text-sm md:text-base lg:text-lg px-4 py-2 rounded-full transition-colors ease-in-out duration-300 hover:scale-110'
+              className='bg-gradient-to-r from-purple-700 to-purple-400   text-white font-bold text-center cursor-pointer text-sm md:text-base lg:text-lg px-4 py-2 rounded-full transition-colors ease-in-out duration-300 hover:scale-110'
             >
               Explore the Museum
             </motion.a>

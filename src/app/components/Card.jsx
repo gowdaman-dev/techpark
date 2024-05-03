@@ -7,23 +7,23 @@ import { ModelData } from './modeldata';
 function Card({ model }) {
     console.log(model);
     return (
-        <div className='w-full h-full flex md:flex-row flex-col-reverse'>
-            <div className='w-full text-white'>
+        <div className='w-full h-full flex flex-col-reverse md:flec-row  '>
+            <div className='w-full text-white  overflow-y-auto'>
                 {
                     ModelData.filter((data) => data.key === model).map((data) => {
                         return <>
-                            <h2 key={data.key} className='xl:text-6xl md:text-4xl text-3xl  font-bold py-2 text-violet-400'>{data.title}</h2>
+                            <h2 key={data.key} className='xl:text-6xl md:text-4xl text-3xl   font-bold py-2 text-violet-400'>{data.title}</h2>
                             {
                                 data.content.map((content) => {
-                                    return <p className='md:text-2xl text-md opacity-90 font-light text-justify'>{content}</p>
+                                    return <p className='md:text-lg min-h-[100px] overflow-hidden  opacity-90   text-justify'>{content}</p>
                                 })
                             }
                         </>
                     })
                 }
             </div>
-            <div className='w-full h-full'>
-                <Canvas className=' md:h-full h-[400px] min-w-[400px] rounded-lg'>
+            <div className='h-[600px]  md:h-[700px] '>
+                <Canvas className=''>
                     <ambientLight intensity={4} shadow={true} />
                     <directionalLight intensity={.5} shadow={true} position={[10, 10, 5]} />
                     <OrbitControls autoRotate />

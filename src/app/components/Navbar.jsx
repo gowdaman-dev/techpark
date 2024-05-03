@@ -9,9 +9,11 @@ const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false)
     return (
         <div className='max-w-screen h-fit p-4 px-10 flex items-center justify-between'>
+            <Link href="/">
             <h1 className='text-xl font-black text-violet-500'>
                 Tech Savvy
             </h1>
+            </Link>
             <nav className='md:flex hidden gap-8 font-semibold text-sm'>
                 <Link className='hover:text-purple-400 transition-colors ease-in-out duration-300' href={'/'}>
                     Home
