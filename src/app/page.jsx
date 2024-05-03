@@ -32,7 +32,7 @@ export default function Home() {
             }}>
             <motion.a
               href='/museum'
-              className='bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent font-bold text-center cursor-pointer text-sm md:text-base lg:text-lg px-4 py-2 rounded-full transition-colors ease-in-out duration-300 hover:scale-110'
+              className='bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-white font-bold text-center cursor-pointer text-sm md:text-base lg:text-lg px-4 py-2 rounded-full transition-colors ease-in-out duration-300 hover:scale-110'
             >
               Explore the Museum
             </motion.a>
