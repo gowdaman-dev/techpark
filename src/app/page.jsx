@@ -11,7 +11,10 @@ export default function Home() {
         <p className='mt-4 font-semibold text-2xl md:text-4xl sm:text-3xl text-center'>
           Lets explore the world of Tech and Art
         </p>
-        <p className='mt-2 font-medium text-xl md:text-2xl sm:text-3xl text-center'>We are glad that you have found our QRcode </p>
+      
+
+        <p className='mt-2 font-medium text-xl md:text-2xl sm:text-3xl text-center'><q> We are glad that you have found our QRcode</q> </p>
+     
         <motion.div
           className='mt-6 flex flex-col items-center gap-4 sm:gap-6 md:gap-8 animate-fade-in'
           initial='hidden'

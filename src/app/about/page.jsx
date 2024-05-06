@@ -21,16 +21,18 @@ function page() {
             duration: 1
         })
     }, { scope: Container })
+    const [photo ,setphoto]=useState(false);
+
     return (
         <div ref={Container} className=' py-4 flex flex-col overflow-hidden'>
             <Transition />
             <div className="px-10 py-8 overflow-hidden">
                 <div className="w-full h-fit overflow-hidden">
-                    <h1 id='Heading' className='text-6xl  font-black'><span className='text-violet-400'>A</span>CET</h1>
+                    <h1 id='Heading' className='text-6xl  text-violet-400  font-black'><span className='text-red-600'>A</span>CET</h1>
                 </div>
                 <div className="w-full h-fit overflow-hidden">
                     <h1 id='subheading' className='text-4xl py-4 font-semibold'>Tech Savvy Musuem</h1>
-                    <h2 id='subheading' className='text-2xl pb-4 font-semibold'>One can build a idea but a team can make it to reality!</h2>
+                    <h2 id='subheading' className='text-2xl pb-4 font-semibold'> <q>One can build a idea but a team can make it to reality</q></h2>
                 </div>
                 <motion.p className='text-gray-800'>We the students of <strong>ACHARIYA COLLEGE OF ENGINEERING TECHNOLOGY</strong> Proudly welcome you all to our Technical Museum.Here,you can get a Vast knowledge about the computer Hardware and Software.</motion.p>
                 <motion.p>Through our website you can easily navigate in and around the Museum in a Virtualized Manner.From our website you could get in-depth information about the components which have been displayed in our Museum and through our website you can view the components in 3D manner from which you can view the objects through all the sides </motion.p>
@@ -40,9 +42,9 @@ function page() {
                 <h2 className='text-4xl py-4 font-semibold text-center' >THANK <span className='text-purple-500'>YOU</span> NOTE</h2>
                 <div className="w-full h-fit flex flex-col items-center justify-center my-8 overflow-hidden">
                     <motion.img viewport={{ once: true }} whileInView={{ opacity: 1, y: '0%', }} transition={{ duration: 1, ease: "easeInOut" }} initial={{ opacity: 0, y: '100px' }} src="https://acet.edu.in/wp-content/uploads/2021/05/pZ0ludnLO7BniYHb1qZoeX8gNb1B860IB4oSW-mb993WdsDGgT.jpg" alt="principal" className="w-64 h-64 rounded-full object-cover" />
-                    <motion.h2 viewport={{ once: true }} whileInView={{ opacity: 1, y: '0%' }} transition={{ duration: 1, ease: "easeInOut" }} initial={{ opacity: 0, y: '100px' }} className='text-3xl font-semibold text-center mt-4'>Dr.S.GURULINGAM</motion.h2>
+                    <motion.h2 viewport={{ once: true }} whileInView={{ opacity: 1, y: '0%' }} transition={{ duration: 1, ease: "easeInOut" }} initial={{ opacity: 0, y: '100px' }} className='text-3xl font-semibold text-center mt-4 '>Dr.S.GURULINGAM</motion.h2>
                     <motion.p viewport={{ once: true }} whileInView={{ opacity: 1, y: '0%' }} transition={{ duration: 1, ease: "easeInOut" }} initial={{ opacity: 0, y: '100px' }} className='text-center mb-4'>B.E., M.E., Ph.D., MISTE</motion.p>
-                    <motion.p viewport={{ once: true }} whileInView={{ opacity: 1, y: '0%' }} transition={{ duration: 1, ease: "easeInOut" }} initial={{ opacity: 0, y: '100px' }} className="max-w-2xl px-4 text-justify text-gray-800">
+                    <motion.p viewport={{ once: true }} whileInView={{ opacity: 1, y: '0%' }} transition={{ duration: 1, ease: "easeInOut" }} initial={{ opacity: 0, y: '100px' }} className="w-[70%] px-4 text-justify text-gray-800">
                         We would like to thank our respected principal <strong>Dr.S.GURULINGAM</strong> sir from the bottom of our heart for his unveiling support for the students to explore and excel in areas of technology,innovation and creativity. His valuable thoughts and guidance throughout our work was fascinating and made our passion to burn like a sun .We would like to express our appreciation for his commitment to showcasing our college students contribution to the Technical Museum .We would like to extend our deepest appreciation for his support in updating the Technical Museum's information on our website.His dedication to showcasing our achievements and progress is truly invaluable.Thank you for your continued support and commitment to our museum success.As a team we continue to evolve and innovate at the Technical Museum,it is imperative to acknowledge the profound impact of his support on our college students.His steadfast dedication to our growth and success has been instrumental in shaping our Tech Savvy Museum . Through his visionary leadership and unwavering commitment,he have facilitated countless opportunites for our students to thrive and excel in their academic pursuits. His support enables us to foster a dynamic learning environment that encourages creativity,critical thinking, and exploration.We are immensely grateful for his ongoing support partnership and advocacy, which empowers our students to become the innovators and leaders of tomorrow. Thank you for your invaluable contributions to the success of our Tech Saavy Museum.
                     </motion.p>
                 </div>
@@ -51,9 +53,9 @@ function page() {
                 <motion.h2 viewport={{ once: true }} whileInView={{ opacity: 1, y: '0%' }} transition={{ duration: 1, ease: "easeInOut" }} initial={{ opacity: 0, y: '100px' }} className='text-4xl py-4 font-semibold text-center'>Our Head of Department (CSE Department)</motion.h2>
                 <div className="w-full h-fit flex flex-col items-center justify-center my-8 overflow-hidden ">
                     <motion.img viewport={{ once: true }} whileInView={{ opacity: 1, y: '0%' }} transition={{ duration: 1, ease: "easeInOut" }} initial={{ opacity: 0, y: '100px' }} src="https://acet.edu.in/wp-content/uploads/2021/06/cse-dept-hod-400x400.jpg" alt="HOD" className="w-48 h-48 rounded-full object-cover" />
-                    <motion.h2 viewport={{ once: true }} whileInView={{ opacity: 1, y: '0%' }} transition={{ duration: 1, ease: "easeInOut" }} initial={{ opacity: 0, y: '100px' }} className='text-3xl font-semibold text-center mt-4'>Dr.A.Kannaki@Vasantha Azhagu </motion.h2>
+                    <motion.h2 viewport={{ once: true }} whileInView={{ opacity: 1, y: '0%' }} transition={{ duration: 1, ease: "easeInOut" }} initial={{ opacity: 0, y: '100px' }} className='text-3xl font-semibold text-center mt-4 ' >Dr.A.KANNAKI@VASANTHA AZHAGU </motion.h2>
                     <motion.p viewport={{ once: true }} whileInView={{ opacity: 1, y: '0%' }} transition={{ duration: 1, ease: "easeInOut" }} initial={{ opacity: 0, y: '100px' }} className='text-center mb-4'>B.E.,M.E.,Ph.D.,</motion.p>
-                    <motion.p viewport={{ once: true }} whileInView={{ opacity: 1, y: '0%' }} transition={{ duration: 1, ease: "easeInOut" }} initial={{ opacity: 0, y: '100px' }} className="max-w-2xl px-4 text-justify text-gray-800">
+                    <motion.p viewport={{ once: true }} whileInView={{ opacity: 1, y: '0%' }} transition={{ duration: 1, ease: "easeInOut" }} initial={{ opacity: 0, y: '100px' }} className="w-[70%]  px-4 text-justify text-gray-800">
                         Our Tech Savvy Museum has been build through the tremendous support and guidance from our beloved Head of the Department Dr.A.kannaki@Vasantha Azhagu Ma'am,up from the beginning her presence made the dream come to reality.We as a team expess our heartful thanks to our HOD Ma'am.The assistance she made everyday for improvement of the work is truely unbelievable.The belief she kept in our team has been our motivation.Tech Savvy Museum team wanted to express our gratitude for her invaluable support in bringing the museum to life on our website. Her guidance and encouragement have been instrumental in making our Tech Savvy as a reality.We would like to extend our heartfelt appreciation for your unwavering support in launching the Tech Savvy Museum through our website.Her leadership and dedication have been crucial in making this endeavor a success. Her expertise and leadership have truly made a significant difference and her commitment have been indispensable in ensuring our online presence accurately reflects our innovations and accomplishments.Her leadership has been invaluable,and we truly appreciate all that you do to support our team's succcess.Expressing gratitude and support to our Head Of The Department can go a long way in fostering a positive working environment.Her dedication towards academic as well as finding the students talents based on their intrest was truly emerging and inspiring .Without you and your support we could not make our dream come true. Through your leadership,guidance and advocacy you have created an environment where we feel empowered to excel and pursue our dreams. Your commitment to our success serves as abeacon of inspiration for our Tech Savvy Team.Thank You for your tireless effort in shaping our museum.Your Leadership and dedication have been crucial in making this endeavor a success.Thank you for your championing ,innovation,and your ongoing commitment to preserving and sharing our cultural heritage.
                     </motion.p>
                 </div>
@@ -66,29 +68,51 @@ function page() {
                     </motion.p>
                     <div className=' p-6 md:p-8 text-center mt-6'>
                         <h2 className='text-4xl font-semibold py-4'>List of Faculty</h2>
-                        <div className='max-w-4xl mx-auto'>
-                            <p className='text-gray-800 leading-relaxed'>- Mrs.Rajalakshmi AP/CSE</p>
-                            <p className='text-gray-800 leading-relaxed'>- Mrs.Jeyalakshmy AP/CSE</p>
-                            <p className='text-gray-800 leading-relaxed'>- Mrs.Madura Dhivya AP/CSE</p>
-                            <p className='text-gray-800 leading-relaxed'>- Mrs.Kalaichelvi AP/CSE</p>
-                            <p className='text-gray-800 leading-relaxed'>- Mrs.Vijayalakshmi AP/CSE</p>
-                            <p className='text-gray-800 leading-relaxed'>- Mr.Ganesan AP/CSE</p>
-                            <p className='text-gray-800 leading-relaxed'>- Mrs.Bhuvaneshwari AP/CSE</p>
-                            <p className='text-gray-800 leading-relaxed'>- Mrs.Dhivya AP/CSE</p>
-
-                            <h2 className='text-4xl font-semibold py-4 mt-4'>Non-Faculty Members</h2>
-                            <p className='text-gray-800 leading-relaxed'>- Mr.Anbarasu Lab Incharge</p>
-                            <p className='text-gray-800 leading-relaxed'>- Mr.Abbubbacker Sithick Lab Incharge</p>
+                        <div className='max-w-4xl mx-auto uppercase'>
+                        <p className='text-gray-800 leading-relaxed '>- Mr.R. ramanathan M.E MBA AP/CSE</p>
+                        <p className='text-gray-800 leading-relaxed '>- Mr.P. KARTHIKEYAN  M.Tech,(ph.D) AP/CSE</p>
+                        <p className='text-gray-800 leading-relaxed '>- Mrs.V. Bhuvaneshwari  M.Tech  AP/CSE</p>
+                        <p className='text-gray-800 leading-relaxed '>- Mrs.G. saral elizabeth  M.E  AP/CSE</p>
+                        <p className='text-gray-800 leading-relaxed '>- Mrs.F.D sherlin astrafel   M.E  AP/CSE</p>
+                        <p className='text-gray-800 leading-relaxed '>- Mrs.F.D asbel sherlin  M.E  AP/CSE</p>
+                        <p className='text-gray-800 leading-relaxed '>- Mrs.G.jayalakshmy M.tech  AP/CSE</p>
+                        <p className='text-gray-800 leading-relaxed '>- Mrs.S.rekha  M.E  AP/CSE</p>
+                        <p className='text-gray-800 leading-relaxed '>- Mrs. Anandhan  M.tech  AP/CSE</p>
+                        <p className='text-gray-800 leading-relaxed '>- Mrs.S.Ezhilvanji  M.tech  AP/CSE</p>
+                        <p className='text-gray-800 leading-relaxed '>- Mrs.D.lalitha    M.E  AP/CSE</p>
+                        <p className='text-gray-800 leading-relaxed '>- Mr. Logesh   M.tech  AP/CSE</p>
+                        <p className='text-gray-800 leading-relaxed '>- Mrs.S. vishnupriya   M.tech  AP/CSE</p>
+                        <p className='text-gray-800 leading-relaxed '>- Mr.keerthisagar   M.tech  AP/CSE</p>
+                        <p className='text-gray-800 leading-relaxed '>- Mr.s.thamizhselvi   M.tech (ph.d) AP/CSE</p>
+                        <p className='text-gray-800 leading-relaxed '>- Mrs.s.vijayalakshmi   M.tech  AP/CSE</p>
+                        <p className='text-gray-800 leading-relaxed '>- Mrs.sundarambal   M.tech  AP/CSE</p>
+                        <p className='text-gray-800 leading-relaxed '>- Mrs.s.arabindu   M.tech  AP/CSE</p>
+                        <p className='text-gray-800 leading-relaxed '>- Mrs.s.madhura divya   M.tech  AP/CSE</p>
+                        <p className='text-gray-800 leading-relaxed '>- Mrs.k.ganeshan  M.E  AP/CSE</p>
+                        <p className='text-gray-800 leading-relaxed '>- Mrs.s.jansi  M.E  AP/CSE</p>
+                        <p className='text-gray-800 leading-relaxed '>- Mrs.g.dhivya   M.E  AP/CSE</p>
+                        <p className='text-gray-800 leading-relaxed '>- Mrs.c.thellamudhan  M.tech  AP/CSE</p>
+                        <p className='text-gray-800 leading-relaxed '>- Mrs.Rajalakshmi AP/CSE</p>
+                        <p className='text-gray-800 leading-relaxed'>- Mrs.Jeyalakshmy AP/CSE</p>
+                        <p className='text-gray-800 leading-relaxed'>- Mrs.Madura Dhivya AP/CSE</p>
+                        <p className='text-gray-800 leading-relaxed'>- Mrs.Kalaichelvi AP/CSE</p>
+                        <p className='text-gray-800 leading-relaxed'>- Mrs.Vijayalakshmi AP/CSE</p>
+                        <p className='text-gray-800 leading-relaxed'>- Mr.Ganesan AP/CSE</p>
+                        <p className='text-gray-800 leading-relaxed'>- Mrs.Bhuvaneshwari AP/CSE</p>
+                        <p className='text-gray-800 leading-relaxed'>- Mrs.Dhivya AP/CSE</p>
+                        <h2 className='text-4xl font-semibold py-4 mt-4'>Non-Faculty Members</h2>
+                        <p className='text-gray-800 leading-relaxed'>- Mr.Anbarasu Lab Incharge</p>
+                        <p className='text-gray-800 leading-relaxed'>- Mr.Abbubbacker Sithick Lab Incharge</p>
                         </div>
                     </div>
 
                 </div>
             </div>
 
-            <div className='max-w-6xl mx-auto px-6 md:px-8 py-12 bg-gray-50 text-gray-800 overflow-hidden grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6'>
-                <h2 className='text-4xl font-semibold py-4 text-center w-full'>About Our Team</h2>
+            <div className='max-w-6xl mx-auto px-6 md:px-8 py-12  text-gray-800 overflow-hidden grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6'>
+                <h2 className='text-4xl font-semibold py-4 text-center md:translate-x-[40%]'>About Our Team</h2>
                 <div className='md:col-span-2'>
-                    <h3 className='text-2xl font-semibold py-4'>Tech Savvy Museum</h3>
+                    <h3 className='text-2xl font-semibold py-4  '>Tech Savvy Museum</h3>
                     <p className='text-gray-800 leading-relaxed'>
                         The Tech Savvy Museum was brought to life through sheer determination and
                         hard work. From its humble beginnings as a collection of scrap materials and
@@ -99,8 +123,22 @@ function page() {
                         to their mission has paid off, resulting in a museum that showcases the
                         marvels of technology in a unique and captivating manner.
                     </p>
-                    <div className='mt-4'>
+                    <motion.div className=" mt-10">
+                    <motion.img viewport={{ once: true }} whileInView={{ opacity: 1, y: '0%', }} transition={{ duration: 1, ease: "easeInOut" }} initial={{ opacity: 0, y: '100px' }} src="imgs/group.jpeg" alt="our team group photo" className="w-full h-full rounded-lg object-cover"  onClick={()=>{setphoto(!photo)}} />
+                 
+                   
+                
+            </motion.div>
+                    
+                   
+                      
+                    
+                    {
+                        photo &&
+                        <div className='mt-4'>
+
                         <h3 className='text-2xl font-semibold py-4 text-center '>Our Team</h3>
+                        
                         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-sm mx-auto'>
                             {[
                                 { name: 'Abdul Bahshith.B' },
@@ -122,22 +160,22 @@ function page() {
                             ))}
                         </div>
                     </div>
+                    }
+                    
                 </div>
             </div>
 
-            <div className='max-w-6xl mx-auto px-6 md:px-8 py-12 bg-gray-50 text-gray-800 overflow-hidden'>
+            <div className='max-w-6xl mx-auto px-6 md:px-8 py-12  text-gray-800 overflow-hidden'>
                 <h2 className='text-4xl font-semibold py-4 text-center'>About Tech Savvy Museum</h2>
                 <div className='max-w-4xl mx-auto'>
                     <p className='text-gray-800 leading-relaxed'>
                         Our Tech Savvy Museum has been build upon the support and contribution of students and faculties of Computer Science and Engineering Department.The components which have been displayed in our Tech Savvy Museum has been created from our department scrap items and E-waste.The sole purpose of the museum is to enhance and enrich the in-depth concepts and idealogy of various computer technology ,Throughout the preparation of the museum is fully based on non-usable and repaired components. The construction of Tech Savvy Museum uplifted the intrest of working as a team and acquiring knowledge .The components which have been displayed are categorized as Hardware, Software, Networks ,Virtualized assitatant and Navigation Robot and creative items by using E-Waste.</p>
                     <p className='text-gray-800 leading-relaxed py-4'>
-                        Tech Savvy Team is a well knowledgeable and eager for success through various aspects of time management, resource management ,financial management and team coordination.Through ,this work we attained various inputs and produced an proactive output.Tech Savvy Museum is not only consist of group of few ,it is an proud property of every souls of CSE department members.We as a team expect the upcoming generations to enhance the museum to the next level.</p>
+                        Tech Savvy Team is a well knowledgeable and eager for success through various aspects of time management, resource management ,financial management and team coordination.Through ,this work we attained various inputs and produced an proactive output.Tech Savvy Museum is not only consist of group of few ,it is an proud property of every souls of CSE department members.We as a team expect the upcoming generations to enhance the museum to the next level. Through various creative ideas given by our students the components have been displayed in the manner through which a Non-Technical background person can also acquire the knowledge.</p>
+                  
                     <p className='text-gray-800 leading-relaxed text-center py-4'>
-                        <span className='block font-semibold text-2xl '>Determination comes upon intimation to determine your destination.</span>
+                        <span className='block font-semibold text-2xl '><q> Determination comes upon intimation to determine your destination.</q></span>
                         <span className='block font-medium text-sm text-gray-600'>- Tech Savvy Museum</span>
-                    </p>
-                    <p className='text-gray-800 leading-relaxed'>
-                        Through various creative ideas given by our students the components have been displayed in the manner through which a Non-Technical background person can also acquire the knowledge.
                     </p>
                 </div>
             </div>
